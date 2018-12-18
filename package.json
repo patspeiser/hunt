@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:dev": "nodemon cross-env SITE_ENVIRONMENT=dev server.js"
+    "start:dev": "cross-env DATABASE_URL=postgres://postgres:postgres@localhost/hunt cross-env SITE_ENVIRONMENT=dev cross-env PORT=3000 nodemon  server.js"
   },
   "author": "",
   "license": "ISC",
@@ -13,7 +13,7 @@
     "angular": "^1.5.8",
     "angular-ui-router": "^0.3.1",
     "bootstrap": "^3.3.7",
-    "cross-env": "^3.1.3",
+    "cross-env": "^5.2.0",
     "express": "^4.14.0",
     "faker": "^3.1.0",
     "nodemon": "^1.11.0",
