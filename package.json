@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:dev": "cross-env DATABASE_URL=postgres://postgres:postgres@localhost/hunt cross-env SITE_ENVIRONMENT=dev cross-env PORT=3000 nodemon  server.js"
+    "start:dev": "cross-env DATABASE_URL=<> cross-env SITE_ENVIRONMENT=dev cross-env PORT=3000 nodemon  server.js"
   },
   "author": "",
   "license": "ISC",
